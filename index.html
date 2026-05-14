@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANN Architecture  Neural Network | Studio </title>
+    <link rel="icon" type="image/png" href="path/ke/gambar/leaf-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 95C50 95 90 70 90 40C90 20 75 5 50 5C25 5 10 20 10 40C10 70 50 95 50 95Z' fill='%2310b981'/><path d='M50 95V5' stroke='%23050805' stroke-width='3'/><path d='M50 70C65 70 80 55 80 40M50 50C35 50 20 35 20 20' stroke='%23050805' stroke-width='3' fill='none'/></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <svg class="logo-svg" width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 95C50 95 90 70 90 40C90 20 75 5 50 5C25 5 10 20 10 40C10 70 50 95 50 95Z" fill="#10b981"/>
+            <path d="M50 95V5" stroke="#050805" stroke-width="3"/>
+            <path d="M50 55L75 35M50 75L25 55" stroke="#050805" stroke-width="3"/>
+        </svg>
+        <span>Neural-Leaf</span></div>
+        <ul class="nav-links">
+            <li><a href="#concept">Filosofi</a></li>
+            <li><a href="#evolution">Evolusi</a></li>
+            <li><a href="#training">Proses</a></li>
+            <li><a href="#architecture">Laboratorium</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Bio-Inspired Intelligence</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Architecture</span><br>
+                <span>Neural Network</span>
+            </h1>
+            <p class="hero-subtitle">Eksplorasi jaringan saraf tiruan yang mengadaptasi efisiensi biologis untuk pemecahan masalah kompleks.</p>
+            <div class="hero-buttons">
+                <a href="#concept" class="btn btn-outline">Pelajari Struktur</a>
+                <a href="#architecture" class="btn btn-primary">Uji Laboratorium</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="concept" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Dasar Bio-Sistem</div>
+                <h2>Fundamental ANN</h2>
+            </div>
+            
+            <div class="concept-grid">
+                <div class="concept-card main-card">
+                    <div class="card-icon">🧠</div>
+                    <h3>Apa itu ANN?</h3>
+                    <p>Representasi digital dari struktur neuron biologis yang dirancang untuk mengenali pola melalui proses pembelajaran berbasis data.</p>
+                </div>
+                <div class="concept-card">
+                    <div class="card-icon">🍃</div>
+                    <h4>Pattern Discovery</h4>
+                    <p>Mengekstrak informasi tersembunyi dari data yang tidak terstruktur.</p>
+                </div>
+                <div class="concept-card">
+                    <div class="card-icon">⚖️</div>
+                    <h4>Sinapsis Digital</h4>
+                    <div class="formula-box">
+                        <code>h = σ(W · x + b)</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="evolution" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Kronologi</div>
+                <h2>Transformasi Jaringan</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-year">1943-1958</div>
+                    <div class="tl-content">
+                        <h4>MCP & Perceptron</h4>
+                        <p>Lahirnya logika neuron biner dan kemampuan belajar bobot pertama.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-year">1986</div>
+                    <div class="tl-content">
+                        <h4>Multi-Layer Era</h4>
+                        <p>Era Backpropagation yang memungkinkan pelatihan jaringan berlapis banyak.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-year">2012+</div>
+                    <div class="tl-content">
+                        <h4>Modern Deep Learning</h4>
+                        <p>Dominasi arsitektur CNN dan Transformer dalam skala data global.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="training" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Mekanisme</div>
+                <h2>Siklus Pembelajaran</h2>
+            </div>
+            <div class="training-grid">
+                <div class="training-card">
+                    <div class="card-num">1</div>
+                    <h4>Forward Pass</h4>
+                    <p>Data mengalir maju melalui bobot untuk menghasilkan estimasi.</p>
+                </div>
+                <div class="training-card">
+                    <div class="card-num">2</div>
+                    <h4>Error Check</h4>
+                    <p>Menghitung selisih (Loss) antara hasil sistem dan fakta sebenarnya.</p>
+                </div>
+                <div class="training-card">
+                    <div class="card-num">3</div>
+                    <h4>Backprop</h4>
+                    <p>Mendistribusikan sinyal koreksi ke seluruh jaringan.</p>
+                </div>
+                <div class="training-card">
+                    <div class="card-num">4</div>
+                    <h4>Optimizer</h4>
+                    <p>Pembaruan bobot secara presisi untuk meningkatkan akurasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="architecture" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Simulasi</div>
+                <h2>Interaksi Arsitektur</h2>
+            </div>
+
+            <div class="arch-container">
+                <div class="arch-diagram">
+                    <!-- Layer Input -->
+                    <div class="arch-block">
+                        <div class="block-title">Input</div>
+                        <div class="neuron-grid" id="inputLayer">
+                            <div class="neuron"></div><div class="neuron"></div><div class="neuron"></div>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">⋙</div>
+                    <!-- Layer Hidden -->
+                    <div class="arch-block">
+                        <div class="block-title">Hidden</div>
+                        <div class="neuron-grid" id="hiddenLayer">
+                            <div class="neuron"></div><div class="neuron"></div><div class="neuron"></div><div class="neuron"></div>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">⋙</div>
+                    <!-- Layer Output -->
+                    <div class="arch-block">
+                        <div class="block-title">Output</div>
+                        <div class="neuron-grid" id="outputLayer">
+                            <div class="neuron"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sim Info Card -->
+                <div class="sim-info-card">
+                    <div class="log-header">🟢 Status Sistem: <span id="status-text">Standby</span></div>
+                    <p id="detail-text">Siap untuk memproses stimulasi data melalui jaringan.</p>
+                </div>
+            </div>
+
+            <!-- TOMBOL TENGAH (Perbaikan image_8736dd.png) -->
+            <div class="arch-controls">
+                <button class="btn btn-primary" id="btnRun" onclick="animateFlow()">⚡ Stimulasi Saraf</button>
+                <button class="btn btn-outline" onclick="resetFlow()">↺ Kalibrasi Ulang</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="functions" class="section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Kapabilitas</div>
+            <h2>3 Fungsi Penting Utama</h2>
+            <p>ANN memiliki kemampuan unik dalam mengolah data yang tidak bisa diselesaikan oleh algoritma pemrograman konvensional.</p>
+        </div>
+
+        <div class="function-grid">
+            <div class="function-card">
+                <div class="f-icon">🧩</div>
+                <h4>Adaptasi Pola Kompleks</h4>
+                <p>ANN mampu mengenali pola yang sangat rumit dan non-linear, seperti mengenali wajah dalam kerumunan atau mendeteksi suara manusia di tengah kebisingan.</p>
+            </div>
+            <div class="function-card">
+                <div class="f-icon">🧬</div>
+                <h4>Generalisasi Data</h4>
+                <p>Setelah melewati proses pelatihan, sistem dapat memberikan hasil prediksi yang akurat terhadap data baru yang belum pernah dilihat sebelumnya (Unseen Data).</p>
+            </div>
+            <div class="function-card">
+                <div class="f-icon">🛠️</div>
+                <h4>Toleransi Kesalahan</h4>
+                <p>Karena bekerja secara terdistribusi melalui banyak neuron, ANN tetap dapat berfungsi dengan baik meskipun sebagian kecil datanya rusak atau tidak lengkap.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── TUJUAN ANN SECTION ─── -->
+<section id="goals" class="section alt-bg">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">Visi Utama</div>
+            <h2>Tujuan Pengembangan ANN</h2>
+        </div>
+
+        <div class="goal-container">
+            <div class="goal-item">
+                <div class="goal-content">
+                    <h4>Otomatisasi Keputusan</h4>
+                    <p>Menciptakan sistem yang mampu mengambil keputusan cerdas secara mandiri tanpa perlu instruksi spesifik untuk setiap skenario baru.</p>
+                </div>
+            </div>
+            <div class="goal-item">
+                <div class="goal-content">
+                    <h4>Efisiensi Komputasi</h4>
+                    <p>Mengadaptasi efisiensi otak manusia dalam memproses informasi berskala besar dengan konsumsi energi dan waktu yang minimal.</p>
+                </div>
+            </div>
+            <div class="goal-item">
+                <div class="goal-content">
+                    <h4>Prediksi Masa Depan</h4>
+                    <p>Menganalisis tren data historis untuk memprediksi probabilitas kejadian di masa depan dengan tingkat akurasi yang tinggi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>

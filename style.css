@@ -1,0 +1,348 @@
+/* 
+   BIO-NEURAL ARCHITECTURE OPTIMIZED CSS
+   Tema: Emerald Cyber-Nature 
+*/
+
+:root {
+    /* Color Palette */
+    --bg-dark: #050805;
+    --bg-alt: #070c08;
+    --primary-green: #10b981;
+    --glow-green: #34d399;
+    --text-light: #ecfdf5;
+    
+    /* Transparent Variants */
+    --card-bg: rgba(16, 185, 129, 0.05);
+    --accent-glass: rgba(16, 185, 129, 0.15);
+    --glass-heavy: rgba(5, 8, 5, 0.9);
+    
+    /* Animations */
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 1. Global Reset & Base */
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+html { 
+    scroll-behavior: smooth; 
+}
+
+body { 
+    background-color: var(--bg-dark); 
+    color: var(--text-light); 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* 2. Navigation */
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 10%; 
+    background: var(--glass-heavy); 
+    backdrop-filter: blur(20px); 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+    border-bottom: 1px solid var(--accent-glass); 
+}
+
+.nav-brand {
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.logo-svg {
+    filter: drop-shadow(0 0 8px var(--primary-green));
+    transition: var(--transition-smooth);
+}
+
+.nav-brand:hover .logo-svg {
+    transform: rotate(-15deg) scale(1.1);
+}
+
+.nav-brand span {
+    font-weight: 800;
+    font-size: 1.3rem;
+    letter-spacing: -0.5px;
+    background: linear-gradient(to right, #fff, var(--primary-green));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links { 
+    display: flex; 
+    list-style: none; 
+    gap: 30px; 
+}
+
+.nav-links a { 
+    color: var(--text-light); 
+    text-decoration: none; 
+    font-size: 0.85rem; 
+    opacity: 0.6; 
+    transition: var(--transition-smooth); 
+}
+
+.nav-links a:hover { 
+    opacity: 1; 
+    color: var(--primary-green); 
+    text-shadow: 0 0 10px var(--primary-green);
+}
+
+/* 3. Hero Section */
+.hero { 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 0 5%;
+}
+
+.hero-badge { 
+    background: rgba(16, 185, 129, 0.1); 
+    color: var(--primary-green); 
+    padding: 8px 20px; 
+    border-radius: 50px; 
+    font-size: 0.75rem; 
+    font-weight: 700; 
+    border: 1px solid var(--accent-glass); 
+    margin-bottom: 24px; 
+    display: inline-block; 
+}
+
+.hero-title { 
+    font-size: clamp(2.5rem, 8vw, 4.8rem); /* Responsif otomatis */
+    font-weight: 800; 
+    line-height: 1.1; 
+    margin-bottom: 24px; 
+}
+
+.gradient-text { 
+    background: linear-gradient(135deg, #10b981, #d1fae5); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+.hero-subtitle { 
+    font-size: 1.1rem; 
+    max-width: 650px; 
+    margin: 0 auto 48px; 
+    opacity: 0.7; 
+}
+
+/* 4. Buttons */
+.hero-buttons { 
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+.btn { 
+    padding: 16px 36px; 
+    border-radius: 100px; 
+    cursor: pointer; 
+    font-weight: 700; 
+    transition: var(--transition-smooth); 
+    border: none; 
+    font-size: 0.9rem; 
+    text-decoration: none; 
+    min-width: 180px; 
+}
+
+.btn-primary { 
+    background: var(--primary-green); 
+    color: #050805; 
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3); 
+}
+
+.btn-outline { 
+    background: transparent; 
+    border: 1.5px solid var(--accent-glass); 
+    color: var(--primary-green); 
+}
+
+.btn:hover { 
+    transform: translateY(-5px); 
+    filter: brightness(1.1); 
+    box-shadow: 0 0 25px var(--primary-green); 
+}
+
+/* 5. Layout & Typography */
+.section { padding: 120px 10%; }
+.alt-bg { background-color: var(--bg-alt); }
+.container { max-width: 1200px; margin: 0 auto; }
+
+.section-header { text-align: center; margin-bottom: 80px; }
+.section-badge { 
+    color: var(--primary-green); 
+    font-weight: 800; 
+    letter-spacing: 2px; 
+    font-size: 0.75rem; 
+    margin-bottom: 12px; 
+    display: block; 
+    text-transform: uppercase;
+}
+
+/* 6. Grid Systems (Cards) */
+.concept-grid, .training-grid, .function-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 32px; 
+}
+
+.concept-card, .training-card, .function-card { 
+    background: var(--card-bg); 
+    border: 1px solid var(--accent-glass); 
+    padding: 48px; 
+    border-radius: 32px; 
+    transition: var(--transition-smooth); 
+}
+
+.concept-card:hover, .training-card:hover, .function-card:hover { 
+    transform: translateY(-12px); 
+    background: rgba(16, 185, 129, 0.08);
+    border-color: var(--primary-green); 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.formula-box { 
+    background: #000; 
+    padding: 18px; 
+    border-radius: 14px; 
+    margin-top: 28px; 
+    color: var(--primary-green); 
+    font-family: 'Fira Code', monospace; 
+    font-size: 0.85rem; 
+    border-left: 4px solid var(--primary-green); 
+}
+
+/* 7. Timeline */
+.timeline { 
+    position: relative; 
+    max-width: 850px; 
+    margin: 0 auto; 
+    padding-left: 50px; 
+    border-left: 2px solid var(--accent-glass); 
+}
+
+.timeline-item { margin-bottom: 60px; position: relative; }
+.timeline-item::before { 
+    content: ''; 
+    position: absolute; 
+    left: -58px; 
+    top: 12px; 
+    width: 14px; 
+    height: 14px; 
+    background: var(--primary-green); 
+    border-radius: 50%; 
+    box-shadow: 0 0 15px var(--primary-green); 
+}
+
+.tl-content { 
+    background: var(--card-bg); 
+    padding: 32px; 
+    border-radius: 24px; 
+    border: 1px solid var(--accent-glass); 
+}
+
+/* 8. Lab / Diagram Simulation */
+.arch-diagram { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: clamp(20px, 5vw, 60px); 
+    padding: 80px 40px; 
+    border-radius: 40px; 
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.07) 0%, transparent 70%); 
+    border: 1px solid var(--accent-glass); 
+    margin-bottom: 50px; 
+}
+
+.neuron { 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 15px; 
+    background: rgba(255,255,255,0.03); 
+    border: 2px solid var(--accent-glass); 
+    transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.neuron.active { 
+    background: var(--primary-green); 
+    box-shadow: 0 0 40px var(--primary-green); 
+    border-color: #fff; 
+    transform: rotate(45deg) scale(1.15); 
+}
+
+.arch-arrow { 
+    opacity: 0.4; 
+    color: var(--primary-green); 
+    font-size: 1.8rem; 
+    font-weight: bold;
+}
+
+.sim-info-card { 
+    background: #000; 
+    border: 1px solid var(--accent-glass); 
+    padding: 28px; 
+    border-radius: 20px; 
+    max-width: 650px; 
+    margin: 0 auto 48px; 
+    font-family: 'Fira Code', monospace; 
+}
+
+/* 9. Goal Items */
+.goal-container { max-width: 900px; margin: 0 auto; }
+
+.goal-item { 
+    display: flex; 
+    align-items: center; 
+    background: #000; 
+    padding: 32px; 
+    border-radius: 24px; 
+    border-right: 4px solid var(--primary-green); 
+    margin-bottom: 24px; 
+    transition: var(--transition-smooth); 
+}
+
+.goal-item:hover { 
+    transform: translateX(15px); 
+    background: var(--card-bg); 
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+}
+
+/* 10. Responsive Media Queries */
+@media (max-width: 1024px) {
+    .section { padding: 100px 5%; }
+    .hero-title { font-size: 3.5rem; }
+}
+
+@media (max-width: 768px) {
+    .navbar { padding: 15px 5%; }
+    .nav-links { display: none; } /* Sembunyikan link di mobile atau ganti hamburger */
+    
+    .hero-buttons { flex-direction: column; align-items: center; }
+    .btn { width: 100%; max-width: 300px; }
+    
+    .arch-diagram { 
+        flex-direction: column; 
+        padding: 60px 20px; 
+        gap: 30px; 
+    }
+    .arch-arrow { transform: rotate(90deg); }
+    
+    .goal-item:hover { transform: translateY(-5px); }
+}
