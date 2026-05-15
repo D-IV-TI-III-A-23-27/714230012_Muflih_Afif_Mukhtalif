@@ -28,8 +28,8 @@
 ## 🚀 Pengerjaan Tugas
 Untuk Pengerjaan Tugas yang sudah dikerjakan silahkan menuju link berikut:
 
-1. **Ann Demo Simulation**: [Neural-Leaf on GitHub Pages](LINK_GITHUB_PAGES_KAMU)
-2. **Artikel Medium**: [](LINK_MEDIUM_KAMU)
-3. **Video Presentasi**: [](LINK_YOUTUBE_KAMU)
+1. **Ann Demo Simulation**: [ANN Leaf on GitHub Pages](https://d-iv-ti-iii-a-23-27.github.io/714230012_Muflih_Afif_Mukhtalif/)
+2. **Artikel Medium**: [Memahami Mengenai Pengurangan Dimensi, serta Teknik T-SNE](https://medium.com/@muflihafif234/memahami-mengenai-pengurangan-dimensi-serta-teknik-t-sne-d1982d70c5bf)
+3. **Video Presentasi**: [Penjelasan Dimensi reduction Dan konsep T-SNE](https://youtu.be/QdJ4FT1mVxM)
 
 ---
